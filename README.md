@@ -3,14 +3,9 @@
 ## About
 Pigitos is a set of tiny, but highly useful Java UDFs for Apache Pig.
 
-## License
-
-Apache licensed.
-
 ## Contents
 
-### UDFs to manipulating maps
-
+### UDFs for manipulating maps
 Pigitos provides UDFs to manipulate maps such as calculating the size of the map or retrieving keys (or values, or key/value pairs) as a bag. Such UDFs are very useful when working with dynamically created column qualifiers (that hold some meaningful information that you want to process) in Apache HBase tables.
 
 It seems that there is no such UDFs in Apache Pig itself or Piggybank library. I have found only UDFs like TOBAG or TOTUPLE, but they do not take a map as an input parameter.
@@ -28,3 +23,6 @@ User = LOAD 'hbase://user' USING HBaseStorage('friend:*', '-loadKey true')
 UserFriend = FOREACH User
   GENERATE username, FLATTEN(MapKeysToBag(friendsMap)) AS friendUsername;
 ```
+
+## License
+Apache licensed.
