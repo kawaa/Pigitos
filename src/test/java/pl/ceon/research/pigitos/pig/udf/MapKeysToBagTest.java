@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hakunamapdata.pig.udf;
+package pl.ceon.research.pigitos.pig.udf;
 
-import com.hakunamapdata.pig.udf.MapKeysToBag;
+import pl.ceon.research.pigitos.pig.udf.MapKeysToBag;
 import java.io.IOException;
 import java.util.*;
 import org.apache.pig.backend.executionengine.ExecException;
