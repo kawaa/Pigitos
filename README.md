@@ -24,5 +24,5 @@ UserFriend = FOREACH User
   GENERATE username, FLATTEN(MapKeysToBag(friendsMap)) AS friendUsername;
 ```
 
-## License
-Apache licensed.
+## Acknowledges
+It is primarily developed at Centre for Open Science (CeON) at Interdisciplinary Centre for Mathematical and Computational Modelling (ICM), University of Warsaw (UW).
