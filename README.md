@@ -12,8 +12,8 @@ It seems that there is no such UDFs in Apache Pig itself or Piggybank library. I
 
 Currently, it contains following UDFs:
 * MapSize – takes a map and returns the number of entries in the map
-* MapKeysToTuple – takes a map and produces a bag that contains all keys from that map
-* MapValuesToTuple -takes a map and produces a bag that contains all values from that map
+* MapKeysToBag – takes a map and produces a bag that contains all keys from that map
+* MapValuesToBag -takes a map and produces a bag that contains all values from that map
 * MapEntriesToBag – takes a map and produces a bag that contains tuples, where each tuple consists of two field: key and value (each tuple corresponds to one key/value pair from a map)
 
 Here is a quick example:
