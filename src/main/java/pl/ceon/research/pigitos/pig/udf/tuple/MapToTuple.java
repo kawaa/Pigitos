@@ -20,8 +20,7 @@ public class MapToTuple extends EvalFunc<Tuple> {
 
         Collection<Object> values = map.values();
 
-        for(Object value : values)
-        {
+        for (Object value : values) {
             tuple.append(value);
         }
 
