@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.Map;
 
-public class MapToTuple extends EvalFunc<Tuple> {
+public class MapKeysToTuple extends EvalFunc<Tuple> {
     @Override
     public Tuple exec(Tuple input) throws IOException {
 
@@ -18,9 +18,9 @@ public class MapToTuple extends EvalFunc<Tuple> {
 
         Map<String, Object> map = getMap(input);
 
-        Collection<Object> values = map.values();
+        Collection<String> values = map.keySet();
 
-        for (Object value : values) {
+        for (String value : values) {
             tuple.append(value);
         }
 
